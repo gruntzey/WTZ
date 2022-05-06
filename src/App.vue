@@ -92,18 +92,17 @@ export default {
   },
   watch: {
     currentPage() {
-      console.log('current Page changed')
       if (!this.images[this.currentPage]) {
         this.getRandomImages()
       }
     }
   },
-  created() {
-    
-  },
   mounted() {
     this.currentPage = 1
     document.addEventListener('keydown', this.changePage)
+  },
+  beforeDestroy() {
+    document.removeEventListener('keydown', this.changePage)
   }
 }
 </script>
