@@ -1,0 +1,21 @@
+{
+  "name": "wtz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "vue-cli-service build",
+    "serve": "vue-cli-service serve"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "unsplash-js": "^7.0.15",
+    "vue": "^3.2.33"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^5.0.4",
+    "node-sass": "^7.0.1",
+    "sass-loader": "^12.6.0"
+  }
+}
